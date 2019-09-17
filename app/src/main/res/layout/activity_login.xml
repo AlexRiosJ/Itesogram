@@ -66,7 +66,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/activity_login_forgot_question"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/activity_login_tv_forgot_action"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/activity_login_btn_login" />
@@ -77,10 +77,10 @@
         android:layout_height="wrap_content"
         android:text="@string/activity_login_forgot_action"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/activity_login_tv_forgot_question"
+        app:layout_constraintBottom_toTopOf="@+id/activity_login_tv_create_account_question"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/activity_login_tv_forgot_question"
-        app:layout_constraintTop_toTopOf="@id/activity_login_tv_forgot_question" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_login_tv_forgot_question" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/activity_login_tv_create_account_question"
