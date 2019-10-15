@@ -34,6 +34,6 @@ class PhotoViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val parseFile: ParseFile = user.get("photo") as ParseFile
         Glide.with(view).load(parseFile.url).into(image)
         username.text = user.get("username") as String
-        comments.text = user.get("comments") as String
+        comments.text = user.get("commentsNumber") as String
     }
 }
